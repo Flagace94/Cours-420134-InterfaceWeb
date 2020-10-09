@@ -2,4 +2,12 @@ h1,p{
     color:blue;
 }
 
+.texteCentre{
+    text-align: center;
+}
+
+#introduction{
+    color: brown;
+    font-weight: bold;
+}
 
