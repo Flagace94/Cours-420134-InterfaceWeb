@@ -11,3 +11,11 @@ h1,p{
     font-weight: bold;
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+strong{
+    font-size: 30px;
+}
