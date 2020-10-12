@@ -7,8 +7,10 @@ h1,p{
 }
 
 #introduction{
-    color: brown;
+    color: rgb(235, 150, 65);
     font-weight: bold;
+    text-align: right;
+    text-shadow: -1px -1px 2px black;
 }
 
 p{
