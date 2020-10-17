@@ -1,0 +1,20 @@
+body{
+    color:blue;
+}
+
+.test p{
+    color: crimson;
+}
+
+div + p{
+    background-color: cyan;
+}
+
+body > div{
+    border: darkblue 2px dashed;
+}
+
+a[target="_blank"]{
+    color: crimson;
+    font-weight: bold;
+}
