@@ -1,0 +1,22 @@
+h1:hover{
+    color: crimson;
+}
+
+a:visited{
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p::first-line{
+    background-color: deepskyblue;
+}
+
+p::-moz-selection{
+    background-color: dimgrey;
+}
+
+
+p::selection{
+    background-color: dimgrey;
+}
