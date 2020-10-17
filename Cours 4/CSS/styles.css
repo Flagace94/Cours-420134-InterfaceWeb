@@ -2,3 +2,14 @@ body{
     color:blue;
 }
 
+.div1{
+    color: white;
+    border: solid 4px blue;
+    background-color: cornflowerblue;
+}
+
+.span1{
+    color: brown;
+    background-color: burlywood;
+}
+
