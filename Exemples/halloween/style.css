@@ -1,0 +1,44 @@
+@font-face {
+    font-family: halloweenFont;
+    src: url(SpookyHillPersonalUse-RpAyW.otf);
+}
+
+@font-face {
+font-family:splashBleeding;
+src: url(SplashBleeding-PKKPP.otf );
+}
+
+body{
+    background-color: black;
+    color: chocolate;
+}
+
+.titre{
+    font-family: halloweenFont;
+    text-align: center;
+    font-size: 60px;
+}
+
+.decompte{
+    border: chocolate 2px solid;
+    border-radius: 25px;
+    width: 350px;
+    height: 300px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    font-family: splashBleeding;
+}
+
+#bat{
+    display: none;
+}
+
+#jours{
+    font-size: 100px;
+    margin: -5px;
+}
+.texteBoite{
+    font-size: 40px;
+}
