@@ -1,0 +1,21 @@
+.table-planete {
+    border: 1px solid black;
+    min-width: 20%;
+    font-size: 20px;
+    border-spacing: 15px;
+}
+
+th {
+    background-color: cornflowerblue;
+}
+
+.table-planete tr:nth-child(even) {
+    background-color: #999999;
+}
+
+th,
+td {
+    border: darkslateblue solid 1px;
+    text-align: left;
+    padding: 15px;
+}
