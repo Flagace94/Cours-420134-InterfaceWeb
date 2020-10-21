@@ -1,7 +1,7 @@
 function decompte() {
     var j = new Date();
     var halloween = new Date(2020, 9, 31);
-    var nbJours = Math.round((halloween- j )/1000/60/60/24);
+    var nbJours = Math.floor((halloween- j )/1000/60/60/24);
     
     document.getElementById("jours").innerHTML = nbJours;
 }
