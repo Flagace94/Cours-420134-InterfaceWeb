@@ -1,0 +1,10 @@
+div{
+    border: black solid 1px;
+    width: 400px;
+    display: inline-block;
+}
+
+#para1{
+    position: fixed;
+    top: 50px;
+}

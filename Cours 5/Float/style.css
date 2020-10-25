@@ -1,0 +1,36 @@
+h1{
+    clear: left;
+}
+#conteneur{
+    border: black solid 1px;
+    width: 400px;
+    float: right;
+    clear: left;
+}
+
+#img1{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+}
+
+p{
+    float: left;;
+}
+
+#img2{
+    clear: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+}
+
+#bt1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+}

@@ -1,0 +1,17 @@
+.conteneur {
+    width: 800px;
+    border: 1px solid black;
+}
+
+.flotteA {
+    float: left;
+    width: 650px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.flotteB {
+    float: left;
+    width: 100px;
+    background-color: blue;
+    border: 1px solid black;}

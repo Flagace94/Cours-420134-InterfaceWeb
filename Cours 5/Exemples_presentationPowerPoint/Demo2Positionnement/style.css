@@ -1,0 +1,22 @@
+h1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+    
+    
+div{
+    background-color: #89B;
+    width: 300px;
+    border: 5px solid #777;
+    border-radius: 15px;
+    position: fixed;
+    top: 50px;
+    left: 100px;
+}
+
+.para1{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}

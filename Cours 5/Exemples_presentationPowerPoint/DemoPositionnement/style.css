@@ -1,0 +1,41 @@
+.div1
+/* Un bloc vert de 100 pixels de large par 75 pixels de haut */
+
+  {
+  background-color: Green;
+  width: 100px;
+  height: 75px;
+  /*position: static;*/
+  /* display: inline-block;*/
+}
+
+.div2
+/* Un bloc rouge de 100 pixels de large par 75 pixels de haut */
+
+  {
+  background-color: Red;
+  width: 100px;
+  height: 75px;
+  /* position: static;*/
+  /*position: relative;*/
+  /* left: 25px;
+   top: 10px;*/
+  /*position: fixed;*/
+  /* position: absolute;  */
+  /*float: left;*/
+  /*display: inline-block;*/
+}
+
+.div3
+/* Un bloc bleu de 800 pixels de large par 80 pixels de haut */
+
+  {
+  background-color: Blue;
+  width: 800px;
+  height: 80px;
+  /* position: static;*/
+  /*  margin-left: 120px;*/
+  /*clear: left;*/
+  /* float: left;*/
+  /* display: inline-block;*/
+}
