@@ -1,0 +1,15 @@
+.div-un{
+    width: 200px;
+    height: 200px;
+    background-color: #06D;
+    border: 5px solid purple;
+    -webkit-transition: width 2s, background-color 5s;
+    -moz-transition: width 2s, background-color 5s;
+    -o-transition: width 2s, background-color 5s;
+    transition: width 2s, background-color 5s;
+    
+}
+.div-un:hover{
+    width: 400px;
+    background-color: red;
+}
