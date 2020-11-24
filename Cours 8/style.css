@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: grey;
+    height: 500px;
+    align-content: space-between;
+}
+
+.flex-item{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+.item1 {
+    flex-grow: 1;
+}
+
+.item2 {
+    flex-grow: 2;
+}
