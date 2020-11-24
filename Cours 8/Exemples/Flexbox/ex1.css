@@ -1,0 +1,23 @@
+.c1 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.c1>div {
+    padding: 20px;
+    width: 250px;
+}
+
+.e1 {
+    background-color: red;
+}
+
+.e2 {
+    background-color: blue;
+}
+
+.e3 {
+    background-color: purple;
+}
