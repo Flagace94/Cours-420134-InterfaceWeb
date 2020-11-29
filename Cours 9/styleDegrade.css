@@ -1,17 +1,71 @@
 .linear-gradient-basic {
-    background: linear-gradient(green, red);
-  }
-  
-  div {
-    width: 300px;
-    height: 300px;
-    margin: 2px;
-  }
+  background: linear-gradient(green, red);
+}
 
-  .linear-gradient-leftRight{
-    background: linear-gradient(to right, green, red);
-  }
+div {
+  width: 300px;
+  height: 300px;
+  margin: 2px;
+}
 
-  .linear-gradient-couleurs{
-    background: linear-gradient(70deg, green,yellow,blue, red);
-  }
+.linear-gradient-leftRight {
+  background: linear-gradient(to right, green, red);
+}
+
+.linear-gradient-couleurs {
+  background: linear-gradient(70deg, green, yellow, blue, red);
+}
+
+.linear-gradient-couleurs-colorsStops {
+  background: linear-gradient(70deg, green 40%, yellow 50%, blue 80%, red 100%);
+}
+
+.repeating-linear-gradient {
+  background: repeating-linear-gradient(green, red 10%, blue 20%);
+}
+
+.linear-gradient-franc {
+  background: linear-gradient(to bottom left, green 50%, red 50%);
+}
+
+.linear-gradient-transp {
+  background: linear-gradient(to right, transparent, red),
+  url("images/css.png");
+}
+
+.simple-radial {
+  background: radial-gradient(red, green);
+}
+
+.radial-ellipse-side {
+  background: radial-gradient(ellipse closest-side,
+      red, green 10%, blue 50%, yellow);
+}
+
+.simple-conic {
+  background: conic-gradient(red, green);
+}
+
+.tartan {
+  background:
+      repeating-linear-gradient(90deg, transparent, transparent 50px,
+        rgba(3, 87, 3, 0.25) 50px, rgba(3, 87, 3, 0.25) 56px,
+        transparent 56px, transparent 63px,
+        rgba(3, 87, 3, 0.25) 63px, rgba(3, 87, 3, 0.25) 69px,
+        transparent 69px, transparent 116px,
+        rgba(119, 10, 10, 0.25) 116px, rgba(119, 10, 10, 0.25) 166px),
+      repeating-linear-gradient(0deg, transparent, transparent 50px,
+        rgba(3, 87, 3, 0.25) 50px, rgba(3, 87, 3, 0.25) 56px,
+        transparent 56px, transparent 63px,
+        rgba(3, 87, 3, 0.25) 63px, rgba(3, 87, 3, 0.25) 69px,
+        transparent 69px, transparent 116px,
+        rgba(119, 10, 10, 0.25) 116px, rgba(119, 10, 10, 0.25) 166px),
+      repeating-linear-gradient(-45deg, transparent, transparent 5px,
+        rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px),
+      repeating-linear-gradient(45deg, transparent, transparent 5px,
+        rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
+}
+
+.hypnose {
+  background: repeating-radial-gradient(black, black 5px, white 5px, white 10px);
+}
