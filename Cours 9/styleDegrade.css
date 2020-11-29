@@ -1,0 +1,17 @@
+.linear-gradient-basic {
+    background: linear-gradient(green, red);
+  }
+  
+  div {
+    width: 300px;
+    height: 300px;
+    margin: 2px;
+  }
+
+  .linear-gradient-leftRight{
+    background: linear-gradient(to right, green, red);
+  }
+
+  .linear-gradient-couleurs{
+    background: linear-gradient(70deg, green,yellow,blue, red);
+  }
