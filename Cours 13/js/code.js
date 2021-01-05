@@ -17,7 +17,7 @@ function getRows(){
 function traitement(xml){
 	var i;
 	var xmlDoc = xml.responseXML;
-	var dataTable = "<tr><th>Nom</th><th>Diamètre</th></tr>";
+	var dataTable = "<tr><th>Nom</th><th>Diamètre</th><th>Distance du soleil</th><th>Nombre de lune(s)</th><th>Rotation</th><th>Révolution</th><th>Température min. °C</th><th>Température max. °C</th></tr>";
 	var rowData = xmlDoc.getElementsByTagName("planete");
 
 	for (var i=0; i<rowData.length; i++){
@@ -26,6 +26,18 @@ function traitement(xml){
 		rowData[i].getElementsByTagName("nom")[0].childNodes[0].nodeValue + 
 		"</td><td>" + 
 		rowData[i].getElementsByTagName("diametre")[0].childNodes[0].nodeValue + 
+		"</td><td>" + 
+		rowData[i].getElementsByTagName("distanceSoleil")[0].childNodes[0].nodeValue + 
+		"</td><td>" + 
+		rowData[i].getElementsByTagName("nbLune")[0].childNodes[0].nodeValue + 
+		"</td><td>" + 
+		rowData[i].getElementsByTagName("rotation")[0].childNodes[0].nodeValue + 
+		"</td><td>" + 
+		rowData[i].getElementsByTagName("revolution")[0].childNodes[0].nodeValue + 
+		"</td><td>" + 
+		rowData[i].getElementsByTagName("min")[0].childNodes[0].nodeValue + 
+		"</td><td>" + 
+		rowData[i].getElementsByTagName("max")[0].childNodes[0].nodeValue +
 		"</td></tr>" ;
 	}
 
