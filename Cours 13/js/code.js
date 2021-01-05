@@ -1,55 +1,50 @@
-window.onload = function () {
-	document.getElementById("btnParNom").addEventListener("click",function(){ getRows("parnom")});
-	document.getElementById("btnParTable").addEventListener("click",function(){ getRows("partable")});
-};
+window.onload = function() {
+	document.getElementById("bouton").addEventListener("click", getRows)
+}
 
-
-function getRows(typeAffichage) {
+function getRows(){
 	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("get", "xml/systemeSolaire.xml", true);
-	xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			if (typeAffichage == "parnom"){
-				resultatsParNom(this);
-			} else{
-				resultatsParTable(this);
-			}
+	xmlhttp.open("get", "xml/systemeSolaire.xml", true)
+	xmlhttp.onreadystatechange = function () {
+		if(this.readyState == 4 && this.status == 200 ){
+			traitement(this);
 		}
-	};
-	xmlhttp.send(null);
+	}
+
+	xmlhttp.send();
 }
 
-function resultatsParNom(xmlhttp) {
-	var txt="";
-	var xmlDoc = xmlhttp.responseXML;
+function traitement(xml){
+	var i;
+	var xmlDoc = xml.responseXML;
+	var dataTable = "<tr><th>Nom</th><th>Diamètre</th></tr>";
+	var rowData = xmlDoc.getElementsByTagName("planete");
+
+	for (var i=0; i<rowData.length; i++){
+		dataTable += "<tr><td>" + 
+
+		rowData[i].getElementsByTagName("nom")[0].childNodes[0].nodeValue + 
+		"</td><td>" + 
+		rowData[i].getElementsByTagName("diametre")[0].childNodes[0].nodeValue + 
+		"</td></tr>" ;
+	}
+
+	document.getElementById("tableData").innerHTML = dataTable;
+}
+
+
+
+
+/*function traitement(xml){
+	var divData = "";
+	var xmlDoc = xml.responseXML;
 	var rowData = xmlDoc.getElementsByTagName("nom");
-	for (i = 0; i< rowData.length; i++) {
-		txt += rowData[i].childNodes[0].nodeValue + "<br>";
-	  }
-	  document.getElementById("parNom").innerHTML = txt;
-}
+	
+	for (var i=0; i<rowData.length; i++){
+		divData += rowData[i].childNodes[0].nodeValue + "<br>";
+	}
 
+	document.getElementById("donnees").innerHTML = divData;
+	//console.log(rowData);
 
-function resultatsParTable(xmlhttp) {
-	var tableNode = document.getElementById("parTable");
-	var xmlDoc = xmlhttp.responseXML;
-	var xmlNodes = xmlDoc.getElementsByTagName("planete");
-	var theTable = tableNode.parentNode;
-	var newRow, newCell, i;
-	console.log ("Nombre de noeuds: " + xmlNodes.length);
-	for (i=0; i<xmlNodes.length; i++) {
-		newRow = tableNode.insertRow(i);
-		for (j=0; j<xmlNodes[i].childNodes.length; j++) {
-			
-			if(xmlNodes[i].childNodes[j].firstChild) {
-				console.log(xmlNodes[i].childNodes[j].firstChild);
-				if (xmlNodes[i].childNodes[j].firstChild.nodeValue != "\n\t\t\t"){
-					newCell = newRow.insertCell(newRow.cells.length);
-					newCell.innerHTML = xmlNodes[i].childNodes[j].firstChild.nodeValue;
-				}
-			}
-		}
-		}
-		theTable.appendChild(tableNode);
-}
-
+}*/
