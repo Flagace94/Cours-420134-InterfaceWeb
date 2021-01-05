@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planetes>
+	<planete id="1">
+		<nom>Mercure</nom>
+		<diametre>4878km</diametre>
+		<distanceSoleil>0,4UA</distanceSoleil>
+		<nbLune>0</nbLune>
+		<rotation>58,7 jours terrestres</rotation>
+		<revolution>88 jours terrestres</revolution>
+		<temperatures>
+			<min>-172</min>
+			<max>427</max>
+		</temperatures>
+	</planete>
+	<planete id="2">
+		<nom>Vénus</nom>
+		<diametre>12104km</diametre>
+		<distanceSoleil>0,7UA</distanceSoleil>
+		<nbLune>0</nbLune>
+		<rotation>243 jours terrestres</rotation>
+		<revolution>224,7 jours terrestres</revolution>
+		<temperatures>
+			<min>453</min>
+			<max>453</max>
+		</temperatures>
+	</planete>
+	<planete id="3">
+		<nom>Terre</nom>
+		<diametre>12756km</diametre>
+		<distanceSoleil>1UA</distanceSoleil>
+		<nbLune>1</nbLune>
+		<rotation>24 heures terrestres</rotation>
+		<revolution>365,25 jours terrestres</revolution>		
+		<temperatures>
+			<min>-90</min>
+			<max>56</max>
+		</temperatures>
+	</planete>
+	<planete id="4">
+		<nom>Mars</nom>
+		<diametre>6778km</diametre>
+		<distanceSoleil>1,5UA</distanceSoleil>
+		<nbLune>2</nbLune>		
+		<rotation>24,63 heures terrestres</rotation>
+		<revolution>687 jours terrestres</revolution>		
+		<temperatures>
+			<min>-123</min>
+			<max>37</max>
+		</temperatures>
+	</planete>
+	<planete id="5">
+		<nom>Jupiter</nom>
+		<diametre>143000km</diametre>
+		<distanceSoleil>5,2UA</distanceSoleil>
+		<nbLune>67</nbLune>
+		<rotation>9,93 heures terrestres</rotation>
+		<revolution>11,87 années terrestres</revolution>		
+		<temperatures>
+			<min>-153</min>
+			<max>-153</max>
+		</temperatures>
+	</planete>
+	<planete id="6">
+		<nom>Saturne</nom>
+		<diametre>120536km</diametre>
+		<distanceSoleil>9,5UA</distanceSoleil>
+		<nbLune>62</nbLune>
+		<rotation>10,66 heures terrestres</rotation>
+		<revolution>29,46 années terrestres</revolution>		
+		<temperatures>
+			<min>-185</min>
+			<max>-185</max>
+		</temperatures>
+	</planete>
+	<planete id="7">
+		<nom>Uranus</nom>
+		<diametre>51118km</diametre>
+		<distanceSoleil>19,6UA</distanceSoleil>
+		<nbLune>27</nbLune>
+		<rotation>17,2 heures terrestres</rotation>
+		<revolution>84,3 années terrestres</revolution>		
+		<temperatures>
+			<min>-214</min>
+			<max>-214</max>
+		</temperatures>
+	</planete>
+	<planete id="8">
+		<nom>Neptune</nom>
+		<diametre>49528km</diametre>
+		<distanceSoleil>30UA</distanceSoleil>
+		<nbLune>14</nbLune>
+		<rotation>16,11 heures terrestres</rotation>
+		<revolution>164,8 années terrestres</revolution>		
+		<temperatures>
+			<min>-225</min>
+			<max>-225</max>
+		</temperatures>
+	</planete>
+</planetes>
